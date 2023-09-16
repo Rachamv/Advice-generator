@@ -84,7 +84,7 @@ Once the app is running, click the "Generate" button to get a piece of advice.
 
 - **Fetching Advice**: Click the "Generate" button to fetch a new piece of advice.
 
-![Generate Button](Group3.svg)
+![Generate Button](https://github.com/Rachamv/Advice-generator/blob/main/Group%203.svg)
 
 - **Styling**: You can customize the app's styling by editing the CSS variables in `style.css`.
 
