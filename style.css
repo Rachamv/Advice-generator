@@ -1,0 +1,98 @@
+:root {
+  --Dark-Blue: #202733;
+  --Dark-Grayish-Blue: #313a48;
+  --Light-Cyan: #cee3e9;
+  --Neon-Green: #53ffaa;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Manrope, Arial, sans-serif;
+  width: 100%;
+  height: 100svh;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: min(33rem, 90%);
+  padding: calc(1.4rem + 2%);
+  border-radius: 1rem;
+  background: var(--Dark-Grayish-Blue);
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.144);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.advice-id {
+  text-align: center;
+  color: var(--Neon-Green);
+  line-height: 1.11rem;
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.256px;
+}
+
+.advice-text {
+  margin-block: 1rem;
+  text-align: center;
+  color: var(--Light-Cyan);
+  font-size: calc(1rem + 0.6vw);
+  line-height: 2.391rem;
+  letter-spacing: -0.3px;
+  font-weight: 800;
+}
+
+.Group2 {
+  margin-block: 0.6rem 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.Group {
+  width: 1.25rem;
+  height: 1rem;
+  position: relative;
+  inset-inline: calc(50% - 0.625rem);
+}
+.Group2::after,
+.Group2::before {
+  content: "";
+  width: 43%;
+  height: 1px;
+  position: absolute;
+  background: #4f5d74;
+  top: 8px;
+}
+.Group2::before {
+  left: 0;
+}
+.Group2::after {
+  right: 0;
+}
+
+.Group3 {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  position: absolute;
+  inset-inline: calc(50% - 2rem);
+  bottom: -10%;
+  transition: box-shadow 500ms;
+}
+.Group3:hover {
+  box-shadow: 0 0 1.5rem var(--Neon-Green);
+}
